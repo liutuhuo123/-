@@ -1,5 +1,5 @@
-print(" 卜卦开始...")
-print(" 心诚则灵")
+print(" 起卦...")
+print(" 大哉乾元、万物资始，乃统天。至哉坤元，万物资生，乃顺承天。")
 
 # qigua_simple.py
 import random

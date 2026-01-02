@@ -27,7 +27,7 @@ class ZhouYiGUI:
         main_frame.pack(fill=tk.BOTH, expand=True)
         
         # 标题
-        title_label = ttk.Label(main_frame, text="周易起卦", font=self.font_title)
+        title_label = ttk.Label(main_frame, text="周易", font=self.font_title)
         title_label.pack(pady=20)
         
         # 起卦按钮
@@ -35,7 +35,7 @@ class ZhouYiGUI:
         self.gua_button.pack(pady=20)
         
         # 提示信息
-        tips_label = ttk.Label(main_frame, text="心诚则灵", font=self.font_normal, foreground="#666666")
+        tips_label = ttk.Label(main_frame, text="大哉乾元、万物资始，乃统天。至哉坤元，万物资生，乃顺承天。", font=self.font_normal, foreground="#666666")
         tips_label.pack(pady=10)
         
         # 卦象显示区域
@@ -88,10 +88,10 @@ class ZhouYiGUI:
         # 显示结果
         for i, (frame, value) in enumerate(zip(self.yao_frames, gua)):
             # 更新爻象符号
-            frame["symbol"].config(text=symbol(value))
+帧[“符号”].配置(文本=符号(值))
             
             # 更新爻数值
-            frame["value"].config(text=str(value))
+帧[“值”].配置(文本=字符串(值))
             
             # 更新是否变爻
             if value in (6, 9):

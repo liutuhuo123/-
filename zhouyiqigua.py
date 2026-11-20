@@ -88,10 +88,10 @@ class ZhouYiGUI:
         # 显示结果
         for i, (frame, value) in enumerate(zip(self.yao_frames, gua)):
             # 更新爻象符号
-帧[“符号”].配置(文本=符号(值))
+帧["symbol"].配置(文本=符号(值))
             
             # 更新爻数值
-帧[“值”].配置(文本=字符串(值))
+帧["value"].配置(文本=字符串(值))
             
             # 更新是否变爻
             if value in (6, 9):
